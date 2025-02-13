@@ -16,6 +16,7 @@ public class LinkedList {
 		
 	}
 
+<<<<<<< HEAD
 	public LinkedList(int value) {
 		Node newNode = new Node(value);
 		this.head = newNode;
@@ -31,6 +32,15 @@ public class LinkedList {
 			temp = temp.next;
 		}
 	}
+=======
+//	public LinkedList(int value) {
+//		Node newNode = new Node(value);
+//		this.head = newNode;
+//		this.tailf = newNode;
+//		lenght = 1;
+//		
+//	}
+>>>>>>> 15fec14de043ced9d71a6bdaf3fc2b6f2964b3d3
 	
 //	public void append(int value) {}
 //	public void prepend(int value) {}
