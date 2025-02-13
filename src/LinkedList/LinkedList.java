@@ -3,7 +3,7 @@ package LinkedList;
 public class LinkedList {
 	
 	private Node head;
-	private Node tailf;
+	private Node tail;
 	private int lenght;
 	
 	class Node {
@@ -19,7 +19,7 @@ public class LinkedList {
 	public LinkedList(int value) {
 		Node newNode = new Node(value);
 		this.head = newNode;
-		this.tailf = newNode;
+		this.tail = newNode;
 		lenght = 1;
 	}
 	
@@ -31,8 +31,18 @@ public class LinkedList {
 			temp = temp.next;
 		}
 	}
-	
-//	public void append(int value) {}
+	public void append(int value) {
+		Node newNode = new Node(value);
+		
+		if (lenght == 0 ) {
+			head = newNode;
+			tail = newNode;
+		} else {
+			tail.next = newNode;
+			tail = newNode;
+		}
+		lenght++;
+	}
 //	public void prepend(int value) {}
 //	public boolean insert(int value, int index) {}
 
