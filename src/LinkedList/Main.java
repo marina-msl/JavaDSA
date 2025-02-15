@@ -6,12 +6,15 @@ public class Main {
 		LinkedList myLinkedList = new LinkedList(4);
 		myLinkedList.append(3);
 		myLinkedList.append(8);
-
-		LinkedList mySecondLinkedList = new LinkedList(0);
+		myLinkedList.append(2);
+		myLinkedList.append(12);
 		
 		myLinkedList.printList();
 		
 		
-		mySecondLinkedList.printList();
+		myLinkedList.getLenght();
+		
+		System.out.println(myLinkedList.get(3));
+		
 	}
 }
