@@ -13,7 +13,11 @@ public class LinkedList {
 		public Node(int value) {
 			this.value = value;
 		}
-		
+
+		@Override
+		public String toString() {
+			return "Node [value=" + value + "]";
+		}
 	}
 
 	public LinkedList(int value) {
@@ -56,11 +60,22 @@ public class LinkedList {
 		}
 		lenght++;
 	}
-//	public void prepend(int value) {}
-//	public boolean insert(int value, int index) {}
+   
+	public void prepend(int value) {
+		Node newNode = new Node(value);
+		newNode.next = head;
+		head = newNode;
+	}
+	
+	public Node removeFirst() {
+		Node temp = head;
+		head = head.next;
+		
+		return temp;
+	}
 	
 	public Node get(int index) {
-		if (index < 0 || lenght >= index) return null;
+		if (index < 0 || index >= lenght) return null;
 
 		Node temp = head;
 		int c = 0;
@@ -75,6 +90,4 @@ public class LinkedList {
 		}
 		return temp;
 	}
-	
-
 }

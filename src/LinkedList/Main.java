@@ -16,5 +16,13 @@ public class Main {
 		
 		System.out.println(myLinkedList.get(3));
 		
+		System.out.println("Remove first: " + myLinkedList.removeFirst());
+		
+		myLinkedList.printList();
+		
+		System.out.println("Preppending number 4 again: ");
+		myLinkedList.prepend(4);
+		myLinkedList.printList();
+		
 	}
 }
