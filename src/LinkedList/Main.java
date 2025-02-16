@@ -22,7 +22,12 @@ public class Main {
 		
 		System.out.println("Preppending number 4 again: ");
 		myLinkedList.prepend(4);
-		myLinkedList.printList();
+		myLinkedList.printList() ;
+		
+		System.out.println("Removing last: " + myLinkedList.removeLast());
+		myLinkedList.printList() ;
+		
+		
 		
 	}
 }
