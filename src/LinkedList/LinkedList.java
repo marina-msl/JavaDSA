@@ -13,11 +13,6 @@ public class LinkedList {
 		public Node(int value) {
 			this.value = value;
 		}
-
-		@Override
-		public String toString() {
-			return "Node [value=" + value + "]";
-		}
 	}
 
 	public LinkedList(int value) {
@@ -37,11 +32,11 @@ public class LinkedList {
 	}
 	
 	public void getHead() {
-		System.out.println("The head of the LinkedList is " + head);
+		System.out.println("The head of the LinkedList is " + head.value);
 	}
 	
 	public void getTail() {
-		System.out.println("The tail of the LinkedList is " + tail);
+		System.out.println("The tail of the LinkedList is " + tail.value);
 	}
 	
 	public void getLenght() {
@@ -99,15 +94,9 @@ public class LinkedList {
 		if (index < 0 || index >= lenght) return null;
 
 		Node temp = head;
-		int c = 0;
 		
-		while (temp.next != null) {
-			if (c == index) {
-				break;
-			} else {
-				temp = temp.next;
-				c++;
-			}
+		for (int i = 0 ; i < index; i++) {
+			temp = temp.next;
 		}
 		return temp;
 	}

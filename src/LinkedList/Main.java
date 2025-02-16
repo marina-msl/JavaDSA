@@ -28,6 +28,8 @@ public class Main {
 		myLinkedList.printList() ;
 		
 		
+		myLinkedList.getHead();
+		
 		
 	}
 }
