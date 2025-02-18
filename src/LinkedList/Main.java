@@ -6,30 +6,30 @@ public class Main {
 		LinkedList myLinkedList = new LinkedList(4);
 		myLinkedList.append(3);
 		myLinkedList.append(8);
-		myLinkedList.append(2);
-		myLinkedList.append(12);
 		
+		//Return 3 nodes
 		myLinkedList.printList();
-		
-		
-		myLinkedList.getLenght();
-		
-		System.out.println(myLinkedList.get(3));
 		
 		System.out.println("Remove first: " + myLinkedList.removeFirst());
 		
+		//Return 2 nodes
 		myLinkedList.printList();
 		
-		System.out.println("Preppending number 4 again: ");
-		myLinkedList.prepend(4);
-		myLinkedList.printList() ;
+		//Return number 2
+		myLinkedList.getLenght();
 		
-		System.out.println("Removing last: " + myLinkedList.removeLast());
-		myLinkedList.printList() ;
+		System.out.println("Remove first: " + myLinkedList.removeFirst().value);
+
+		System.out.println("Remove first: " + myLinkedList.removeFirst().value);
+
+		//Return 0
+		myLinkedList.getLenght();
+
+		//Return empty
+		myLinkedList.printList();
 		
-		
-		myLinkedList.getHead();
-		
-		
+		//Return null
+		System.out.println("Remove first: " + myLinkedList.removeFirst());
+
 	}
 }
