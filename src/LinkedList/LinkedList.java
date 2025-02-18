@@ -109,7 +109,18 @@ public class LinkedList {
 		return temp;
 	}
 	
-//	public void set(int value) {}
+	public boolean set(int value, int index) {
+		
+		Node temp = get(index);
+		
+		if(temp != null) {
+			temp.value = value;
+			return true;
+		}
+		return false;
+	}
+	
+	
 //	public void insert(Node node) {}
 //	public void remove(Node node) {}
 //	public void reverse() {}

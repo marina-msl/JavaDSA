@@ -7,29 +7,14 @@ public class Main {
 		myLinkedList.append(3);
 		myLinkedList.append(8);
 		
-		//Return 3 nodes
+
+		System.out.println("Priting LinkedList ");
 		myLinkedList.printList();
 		
-		System.out.println("Remove first: " + myLinkedList.removeFirst());
-		
-		//Return 2 nodes
+		myLinkedList.set(10, 1);
+
+		System.out.println("Priting LinkedList ");
 		myLinkedList.printList();
-		
-		//Return number 2
-		myLinkedList.getLenght();
-		
-		System.out.println("Remove first: " + myLinkedList.removeFirst().value);
-
-		System.out.println("Remove first: " + myLinkedList.removeFirst().value);
-
-		//Return 0
-		myLinkedList.getLenght();
-
-		//Return empty
-		myLinkedList.printList();
-		
-		//Return null
-		System.out.println("Remove first: " + myLinkedList.removeFirst());
 
 	}
 }
