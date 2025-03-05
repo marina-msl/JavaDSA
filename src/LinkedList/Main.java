@@ -12,13 +12,12 @@ public class Main {
 		System.out.println("Printing LinkedList ");
 		myLinkedList.printList();
 		
-		myLinkedList.insert(1, 2);
+		myLinkedList.remove(0);
 		
 		System.out.println("Printing LinkedList ");
 		myLinkedList.printList();
 		
-		boolean sucess = myLinkedList.insert(0, 13);
-		System.out.println("Sucess insert new node: " + sucess);
+		System.out.println("Sucess removing new node: " + myLinkedList.remove(4).value);
 		System.out.println("Printing LinkedList ");
 		myLinkedList.printList();
 		

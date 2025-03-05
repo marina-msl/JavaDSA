@@ -149,25 +149,25 @@ public class LinkedList {
 		return true;
 	}
 	
-//	public boolean remove(int index) {
-//		if (index < 0 || index > lenght) return false;
-//
-//		if (index == lenght) {
-//			removeLast();
-//			return true;
-//		}
-//		
-//		if (index == 1) {
-//			removeFirst();
-//			return true;
-//		}
-//		
-//		
-//		Node newNode = get(index);
-//		lenght--;
-//		
-//		return true;
-//	}
+	public Node remove(int index) {
+		if (index < 0 || index > lenght) return null;
+
+		if (index == 0) return removeFirst();
+		
+		if (index == lenght) return removeLast();
+		
+		// get the node to be removed
+		Node temp = get(index);
+		//get the previous node of the one to be removed
+		Node prev = get(index - 1);
+		
+		prev.next = temp.next;
+		temp.next = null;
+		lenght--;
+		
+		return temp;
+	}
+	
 //	public void reverse() {}
 	
 }
