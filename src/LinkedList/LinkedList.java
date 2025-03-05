@@ -156,10 +156,14 @@ public class LinkedList {
 		
 		if (index == lenght) return removeLast();
 		
-		// get the node to be removed
-		Node temp = get(index);
 		//get the previous node of the one to be removed
 		Node prev = get(index - 1);
+		
+		// get the node to be removed
+		//Method get is a time complexity of O(n)
+		//Node temp = get(index);
+		//Faster way to grab the node to be removed instead of get
+		Node temp = prev.next; 
 		
 		prev.next = temp.next;
 		temp.next = null;

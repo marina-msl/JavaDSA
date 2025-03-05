@@ -21,5 +21,9 @@ public class Main {
 		System.out.println("Printing LinkedList ");
 		myLinkedList.printList();
 		
+		System.out.println("Sucess removing a node of the midle of the LinkedList " + myLinkedList.remove(1).value);
+		System.out.println("Printing LinkedList ");
+		myLinkedList.printList();
+		
 	}
 }
