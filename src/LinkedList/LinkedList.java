@@ -168,10 +168,25 @@ public class LinkedList {
 		prev.next = temp.next;
 		temp.next = null;
 		lenght--;
-		
 		return temp;
 	}
 	
-//	public void reverse() {}
+	public void reverse() {
+		
+		Node temp = head;
+		Node next = temp.next;
+		Node prev = temp;
+		head = tail;
+		tail = temp;
+		
+		while (next != null) {
+			temp = next;
+			next = temp.next;
+			temp.next = prev;
+			prev = temp;
+		}
+		
+		tail.next = null;
+	}
 	
 }
