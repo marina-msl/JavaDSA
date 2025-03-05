@@ -15,3 +15,10 @@ Studies about Java Data Structures and Algorithms in the Udemy course (https://w
 - [ ] Merge Sort
 - [ ] Quick Sort
 
+
+# LinkedList
+## Reversing LinkedList
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/4d842317-6b9f-4766-9b2b-591b5a68b6f8" />
+
+
+
