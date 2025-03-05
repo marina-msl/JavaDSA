@@ -130,7 +130,7 @@ public class LinkedList {
 	public boolean insert(int index, int value) {
 		if (index < 0 || index > lenght) return false;
 
-		if (lenght == 0 ) {
+		if (index == 0 ) {
 			prepend(value);
 			return true;
 		} 
@@ -141,14 +141,33 @@ public class LinkedList {
 		}
 		
 		Node newNode = new Node(value);
-		Node temp = get(index-1);
+		Node temp = get(index - 1);
 		
 		newNode.next = temp.next;
 		temp.next = newNode;
 		lenght++;
 		return true;
 	}
-//	public void remove(Node node) {}
+	
+//	public boolean remove(int index) {
+//		if (index < 0 || index > lenght) return false;
+//
+//		if (index == lenght) {
+//			removeLast();
+//			return true;
+//		}
+//		
+//		if (index == 1) {
+//			removeFirst();
+//			return true;
+//		}
+//		
+//		
+//		Node newNode = get(index);
+//		lenght--;
+//		
+//		return true;
+//	}
 //	public void reverse() {}
 	
 }
