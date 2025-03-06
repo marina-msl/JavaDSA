@@ -5,11 +5,10 @@ public class Main {
 	public static void main(String[] args) {
 		DoublyLinkedList ddl = new DoublyLinkedList(2);
 		
-		ddl.printList();
+		ddl.append(4);
+		ddl.append(6);
 		
-		ddl.getHead();
-		ddl.getTail();
-		ddl.getLength();
+		ddl.printList();
 		
 		
 	}
