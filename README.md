@@ -17,7 +17,49 @@ Studies about Java Data Structures and Algorithms in the Udemy course (https://w
 - [ ] Quick Sort
 
 
-# LinkedList
+# Highlights in LinkedList
+## Remove method
+<b>Before:</b>
+```java
+public Node remove(int index) {
+      if (index < 0 || index > lenght) return null;
+	if (index == 0) return removeFirst();
+	if (index == lenght) return removeLast();
+
+      // get the node to be removed
+	Node temp = get(index);
+	//get the previous node of the one to be removed
+	Node prev = get(index - 1);
+	prev.next = temp.next;
+	temp.next = null;
+	lenght--;
+
+	return temp;
+}
+```
+<b>After</b>:
+```java
+public Node remove(int index) {
+      if (index < 0 || index > lenght) return null;
+	if (index == 0) return removeFirst();
+	if (index == lenght) return removeLast();
+      
+      //get the previous node of the one to be removed
+      Node prev = get(index - 1);
+
+      //get the node to be removed
+      //Method get is a time complexity of O(n)
+      //Node temp = get(index);
+      //Faster way to grab the node to be removed instead of get
+      Node temp = prev.next; 
+      prev.next = temp.next;
+      temp.next = null;
+      lenght--;
+
+      return temp;
+}
+```
+
 ## Reversing LinkedList
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/4d842317-6b9f-4766-9b2b-591b5a68b6f8" />
 
