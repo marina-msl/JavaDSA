@@ -7,6 +7,9 @@ public class Main {
 		
 		ddl.printList();
 		
+		ddl.getHead();
+		ddl.getTail();
+		ddl.getLength();
 		
 		
 	}
