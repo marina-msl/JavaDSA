@@ -10,6 +10,22 @@ public class Main {
 		
 		ddl.printList();
 		
+		System.out.println("Remove last: " + ddl.removeLast().value);
+
+		ddl.printList();
+		
+		System.out.println("Remove last: " + ddl.removeLast().value);
+		ddl.printList();
+
+		//Removing the last one
+		System.out.println("Remove last: " + ddl.removeLast().value);
+		ddl.printList();
+
+		//Removing nothing, return null
+		System.out.println("Remove last: " + ddl.removeLast());
+		ddl.printList();
+
+
 		
 	}
 
