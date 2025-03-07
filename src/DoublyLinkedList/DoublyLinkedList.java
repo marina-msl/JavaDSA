@@ -88,4 +88,24 @@ public class DoublyLinkedList {
 		}
 		length++;
 	}
+	
+	public Node removeFirst() {
+		if (length == 0) return null;
+		
+		Node temp;
+		
+		if (length == 1) {
+			temp = head;
+			head = null;
+			tail = null;
+			
+		} else {	
+			temp = head;
+			head  = head.next;
+			head.prev = null;
+		}
+		
+		length --;
+		return temp;
+	}
 }

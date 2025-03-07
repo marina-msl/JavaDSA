@@ -10,14 +10,16 @@ public class Main {
 		
 		System.out.println("Printing LinkedList");
 		ddl.printList();
-		
-		ddl.prepend(1);
 
+		ddl.removeFirst();
 		System.out.println("Printing LinkedList");
 		ddl.printList();
 
-		ddl.prepend(11);
+		ddl.removeFirst();
+		System.out.println("Printing LinkedList");
+		ddl.printList();
 		
+		ddl.removeFirst();
 		System.out.println("Printing LinkedList");
 		ddl.printList();
 		
