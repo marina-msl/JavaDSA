@@ -8,24 +8,18 @@ public class Main {
 		ddl.append(4);
 		ddl.append(6);
 		
+		System.out.println("Printing LinkedList");
 		ddl.printList();
 		
-		System.out.println("Remove last: " + ddl.removeLast().value);
+		ddl.prepend(1);
 
+		System.out.println("Printing LinkedList");
 		ddl.printList();
+
+		ddl.prepend(11);
 		
-		System.out.println("Remove last: " + ddl.removeLast().value);
+		System.out.println("Printing LinkedList");
 		ddl.printList();
-
-		//Removing the last one
-		System.out.println("Remove last: " + ddl.removeLast().value);
-		ddl.printList();
-
-		//Removing nothing, return null
-		System.out.println("Remove last: " + ddl.removeLast());
-		ddl.printList();
-
-
 		
 	}
 
