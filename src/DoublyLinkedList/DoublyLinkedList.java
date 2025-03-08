@@ -61,15 +61,15 @@ public class DoublyLinkedList {
 	public Node removeLast() {
 		if (length == 0) return null;
 		
-		Node temp;
+		Node temp = tail;
+		
 		if (length == 1) {
-			temp = head;
 			head = null;
 			tail = null;
 		} else {
-			temp = tail;
 			tail = tail.prev;
 			tail.next = null;
+			temp.prev = null;
 		}
 		length --;
 		return temp;
