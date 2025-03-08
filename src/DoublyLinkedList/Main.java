@@ -11,18 +11,7 @@ public class Main {
 		System.out.println("Printing LinkedList");
 		ddl.printList();
 
-		ddl.removeFirst();
-		System.out.println("Printing LinkedList");
-		ddl.printList();
-
-		ddl.removeFirst();
-		System.out.println("Printing LinkedList");
-		ddl.printList();
-		
-		ddl.removeFirst();
-		System.out.println("Printing LinkedList");
-		ddl.printList();
+		System.out.println("Getting Node by index " + ddl.get(1).value);
 		
 	}
-
 }
