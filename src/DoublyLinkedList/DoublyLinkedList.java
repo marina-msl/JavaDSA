@@ -92,15 +92,13 @@ public class DoublyLinkedList {
 	public Node removeFirst() {
 		if (length == 0) return null;
 		
-		Node temp;
+		Node temp = head;
 		
 		if (length == 1) {
-			temp = head;
 			head = null;
 			tail = null;
 			
 		} else {	
-			temp = head;
 			head  = head.next;
 			head.prev = null;
 		}
