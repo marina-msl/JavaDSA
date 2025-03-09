@@ -16,22 +16,11 @@ public class Main {
 
 		System.out.println("Printing LinkedList");
 		ddl.printList();
+		
+		System.out.println("Sucess in set a Node: " + ddl.set(4, 11));
+		
+		System.out.println("Printing LinkedList");
+		ddl.printList();
 
-		long now = System.currentTimeMillis();
-		System.out.println("Getting Node by index 0 : " + ddl.get(0).value + " value");
-		long after = System.currentTimeMillis();
-		System.out.println("Time execution " + (after - now));
-		
-		long now1 = System.currentTimeMillis();
-		System.out.println("Getting Node by index 4 : " + ddl.get(4).value + " value");
-		long after1 = System.currentTimeMillis();
-		System.out.println("Time execution " + (after1 - now1));
-		
-		
-		long now2 = System.currentTimeMillis();
-		System.out.println("Getting Node by index 8 : " + ddl.get(8).value + " value");
-		long after2 = System.currentTimeMillis();
-		System.out.println("Time execution " + (after2 - now2));
-		
 	}
 }

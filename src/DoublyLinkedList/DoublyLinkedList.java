@@ -126,7 +126,15 @@ public class DoublyLinkedList {
 	}
 	
 	
-//	public void set(int index, int value) {
+	public boolean set(int index, int value) {
+		Node temp = get (index);
 		
-//	}
+		if (temp != null) {
+			temp.value = value;
+			return true;
+		} 
+		return false;
+		
+		
+	}
 }
