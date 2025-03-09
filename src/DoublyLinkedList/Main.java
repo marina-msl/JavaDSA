@@ -17,12 +17,12 @@ public class Main {
 		System.out.println("Printing LinkedList");
 		ddl.printList();
 		
-		ddl.insert(0, 1);
+		ddl.remove(9);
 		
 		System.out.println("Printing LinkedList");
 		ddl.printList();
 		
-		ddl.insert(2, 3);
+		ddl.remove(0);
 		
 		System.out.println("Printing LinkedList");
 		ddl.printList();
