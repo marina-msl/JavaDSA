@@ -66,4 +66,43 @@ public Node remove(int index) {
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/4d842317-6b9f-4766-9b2b-591b5a68b6f8" />
 
 
+# Highlights in DoublyLinkedList
+## Get Method:
+<b>Before:</b>
+```java
+public Node get(int index) {
+		
+		if (index < 0 || index >= length ) return null;
+		
+		Node temp = head;
+		
+		for(int i = 0 ; i < index; i ++) {
+			temp = temp.next;
+		}
+		
+		return temp;
+	}
+```
 
+<b>After</b>:
+<p>Making more eficient: </p>
+
+```java
+public Node get(int index) {
+	if (index < 0 || index >= length ) return null;
+		
+		Node temp = head;
+		if (index < length/2) {
+			for(int i = 0 ; i < index; i ++) {
+				temp = temp.next;
+			}
+		} else {
+			temp = tail;
+			for (int i = length - 1; i > index; i--) {
+				temp = temp.prev;
+			}
+		}
+		return temp;
+	}
+ }
+```
