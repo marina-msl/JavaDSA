@@ -17,7 +17,12 @@ public class Main {
 		System.out.println("Printing LinkedList");
 		ddl.printList();
 		
-		System.out.println("Sucess in set a Node: " + ddl.set(4, 11));
+		ddl.insert(0, 1);
+		
+		System.out.println("Printing LinkedList");
+		ddl.printList();
+		
+		ddl.insert(2, 3);
 		
 		System.out.println("Printing LinkedList");
 		ddl.printList();
