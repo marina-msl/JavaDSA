@@ -5,6 +5,8 @@ Studies about Java Data Structures and Algorithms in the Udemy course (https://w
 - [X] LinkedList
       <p><b> Methods </b>: printList, append, removeLast, prepend, removeFirst, get, set, insert, remove and reverse
 - [ ] Doubly LinkedList
+         <p><b> Methods </b>: printList, append, removeLast, prepend, removeFirst, get, set, insert, remove
+
 - [ ] Stacks and Queues
 - [ ] Trees
 - [ ] Hash Tables
