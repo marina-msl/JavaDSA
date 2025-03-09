@@ -110,7 +110,7 @@ public class DoublyLinkedList {
 	
 	public Node get(int index) {
 		
-		if (index < 0 || index > length ) return null;
+		if (index < 0 || index >= length ) return null;
 		
 		Node temp = head;
 		
