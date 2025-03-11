@@ -194,7 +194,6 @@ public class LinkedList {
 	//Challenging of findMiddleNode using slow and fast pointer technique
 	//also known as Floyd's Tortoise and Haire Algorithm
 	public Node findMiddleNode() {
-		
 		Node fast = head;
 		Node slow = head;
 		
@@ -204,6 +203,23 @@ public class LinkedList {
 		}
 		
 		return slow;
+	}
+	
+	public boolean hasLoop() {
+		Node fast = head;
+		Node slow = head;
+		
+		boolean hasLoop = false;
+		while (fast != null && fast.next != null) {
+			fast = fast.next.next;
+			slow = slow.next;
+			
+			if (slow == fast) {
+				hasLoop = true;
+			}
+		}
+		
+		return hasLoop;
 	}
 	
 }
