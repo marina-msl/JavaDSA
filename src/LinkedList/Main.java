@@ -9,25 +9,17 @@ public class Main {
 		myLinkedList.append(4);
 		myLinkedList.append(5);
 
-		System.out.println("Printing LinkedList 1");
-		myLinkedList.printList();
-		
-		myLinkedList.reverse();
-		
-		System.out.println("Printing LinkedList 2 ");
-		myLinkedList.printList();
+	
+		System.out.println("Finding middle node of the LinkedList " + myLinkedList.findMiddleNode().value);
 		
 		LinkedList mySecondLinkedList = new LinkedList(1);
-		System.out.println("Printing second LinkedList ");
-		mySecondLinkedList.printList();
-		mySecondLinkedList.reverse();
-		
-		System.out.println("Printing second LinkedList ");
-		mySecondLinkedList.printList();
-		
-		
-		
-		
+		mySecondLinkedList.append(2);
+		mySecondLinkedList.append(3);
+		mySecondLinkedList.append(4);
+		mySecondLinkedList.append(5);
+		mySecondLinkedList.append(6);
+
+		System.out.println("Finding middle node of the LinkedList " + mySecondLinkedList.findMiddleNode().value);
 		
 	}
 }

@@ -189,4 +189,21 @@ public class LinkedList {
 		tail.next = null;
 	}
 	
+	//If the list has an even number of nodes, the method should return the second middle node.
+    //Note: this LinkedList implementation does not have a length member variable.
+	//Challenging of findMiddleNode using slow and fast pointer technique
+	//also known as Floyd's Tortoise and Haire Algorithm
+	public Node findMiddleNode() {
+		
+		Node fast = head;
+		Node slow = head;
+		
+		while (fast != null && fast.next != null) {
+			fast = fast.next.next;
+			slow = slow.next;
+		}
+		
+		return slow;
+	}
+	
 }
