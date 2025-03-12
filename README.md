@@ -22,7 +22,7 @@ Studies about Java Data Structures and Algorithms in the Udemy course (https://w
 # Highlights in LinkedList
 I'm truly passionate about LinkedList. It's a way to create a data structure, with Node object. 
 Which Node object has it owns value and the reference to the next node, so it creates a chain. 
-<p>It's possible to figure out where is the end of the LinkedList Iin two ways:</p>
+<p>It's possible to figure out where is the end of the LinkedList in two ways:</p>
 
 1. where is the the Node which points to the Tail reference
 2. When the next node is null
