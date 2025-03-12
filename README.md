@@ -20,6 +20,31 @@ Studies about Java Data Structures and Algorithms in the Udemy course (https://w
 
 
 # Highlights in LinkedList
+I'm truly passionate about LinkedList. It's a way to create a data structure, with Node object. 
+Which Node object has it owns value and the reference to the next node, so it creates a chain. 
+<p>It's possible to figure out where is the end of the LinkedList Iin two ways:</p>
+
+1. where is the the Node which points to the Tail reference
+2. When the next node is null
+   
+<p>Time complexity of which method:</p>
+
+- prepend = O(1)
+- append = O(n) 
+- removeFirst = O(1)
+- removeLast = O(n)
+- insert = O(n)
+- remove = O(n)
+- get/set = O(n)
+
+<b>KeyNotes:</b> 
+
+1. In a singly linkedlist, operations like append and removeLast would have time complexity of O(n) instead of O(1), as you would need to traverse the
+list to reach the last node, even with the reference of tail retrieved. The point is, to make this operations, we also have to point the second-to-last node point null 
+to the next atribute and to make this action is only possible traversing the list.
+
+2. In Java, LinkedList was built as a DoublyLinkedList, so the time complexity to addLast and removeLast is O(1).
+
 ## Remove method
 <b>Before:</b>
 ```java
