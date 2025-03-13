@@ -11,10 +11,19 @@ public class Main {
 		myStack.push(4);
 		
 		myStack.printStack();
-		
-		myStack.getHeight();
-		myStack.getTop();
-		
-	}
 
+		System.out.println("Poping Node: " + myStack.pop().value);
+		
+		myStack.printStack();
+		
+		System.out.println("Second stack");
+		Stack mySecondStack = new Stack(1);
+		System.out.println("Printing second stack");
+		mySecondStack.printStack();
+		mySecondStack.pop();
+		
+		System.out.println("Printing empty second stack");
+		mySecondStack.printStack();
+		mySecondStack.pop();		
+	}
 }
