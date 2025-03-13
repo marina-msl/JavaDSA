@@ -4,7 +4,7 @@ Studies about Java Data Structures and Algorithms in the Udemy course (https://w
 
 - [X] LinkedList
       <p><b> Methods </b>: printList, append, removeLast, prepend, removeFirst, get, set, insert, remove and reverse
-- [ ] Doubly LinkedList
+- [X] Doubly LinkedList
          <p><b> Methods </b>: printList, append, removeLast, prepend, removeFirst, get, set, insert, remove
 
 - [ ] Stacks and Queues
@@ -90,7 +90,6 @@ public Node remove(int index) {
 ## Reversing LinkedList
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/4d842317-6b9f-4766-9b2b-591b5a68b6f8" />
 
-
 # Highlights in DoublyLinkedList
 ## Get Method:
 <b>Before:</b>
@@ -131,3 +130,6 @@ public Node get(int index) {
 	}
  }
 ```
+# Stack vs QUEUE
+<p>Stack -> LIFO ---> Last in First Out</p>
+<p>Queue -> FIFO ---> First in First Out</p>
