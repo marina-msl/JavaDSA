@@ -22,4 +22,27 @@ public class Queue {
 		length = 1;
 	}
 	
+	public void printQueue() {
+		Node temp = first;
+		
+		if (first == null) System.out.println("The queue is empty!");
+		
+		while (temp != null)  {
+			System.out.println(temp.value);
+			temp = temp.next;
+		}
+	}
+	
+	public void enqueue(int value) {
+		Node newNode = new Node(value);
+		
+		if (length == 0) {
+			first = newNode;
+			last = newNode;
+		} else {
+			last.next = newNode;
+			last = newNode;
+		}
+		length++;
+	}
 }
