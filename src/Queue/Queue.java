@@ -58,7 +58,7 @@ public class Queue {
 		length++;
 	}
 	
-	public Node queue() {
+	public Node dequeue() {
 		
 		if (length == 0) return null;
 		

@@ -11,7 +11,7 @@ public class Main {
 		System.out.println("Printing Queue");
 		myQueue.printQueue();
 		
-		System.out.println(myQueue.queue().value);
+		System.out.println(myQueue.dequeue().value);
 		
 		System.out.println("Printing Queue");
 		myQueue.printQueue();
