@@ -9,7 +9,9 @@ public class Main {
 		myLinkedList.append(4);
 		myLinkedList.append(5);
 	
-		//If there is a loop, something is wrong in the LinkedList implementation
-		System.out.println("Is there a loop in the LinkedList " + myLinkedList.hasLoop());
+		//findKthFromEnd return the k-th node from the end of the list
+		System.out.println(myLinkedList.findKthFromEnd(3).value);
+		
+		
 	}
 }

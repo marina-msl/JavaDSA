@@ -222,4 +222,30 @@ public class LinkedList {
 		return hasLoop;
 	}
 	
+	
+
+	/** Challenging Implement a method called findKthFromEnd that 
+	 * returns the k-th node from the end of the list.
+	 */
+	public Node findKthFromEnd(int k) {
+		
+		Node slow = head;
+		Node fast = head;
+		
+		//moving fast pointer untill reacher the k 
+		for (int i = 0; i < k; i++) {
+			
+			//if fast is null, the list has fewer than K nodes
+			if (fast == null) return null;
+			fast = fast.next;
+		}
+		
+		//moving both points untill fast reaches the end
+		while (fast != null) {
+			slow = slow.next;
+			fast = fast.next;
+		}
+		
+		return slow;	
+	}
 }
