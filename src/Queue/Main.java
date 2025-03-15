@@ -10,9 +10,15 @@ public class Main {
 		
 		myQueue.printQueue();
 		
+		myQueue.getFirst();
+		myQueue.getLast();
+		myQueue.getLength();
+		
 		Queue mySecondQueue = new Queue(0);
 		
 		mySecondQueue.printQueue();
+		
+		
 		
 	}
 }
