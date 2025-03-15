@@ -8,17 +8,12 @@ public class Main {
 		myQueue.enqueue(3);
 		myQueue.enqueue(4);
 		
+		System.out.println("Printing Queue");
 		myQueue.printQueue();
 		
-		myQueue.getFirst();
-		myQueue.getLast();
-		myQueue.getLength();
+		System.out.println(myQueue.queue().value);
 		
-		Queue mySecondQueue = new Queue(0);
-		
-		mySecondQueue.printQueue();
-		
-		
-		
+		System.out.println("Printing Queue");
+		myQueue.printQueue();
 	}
 }
