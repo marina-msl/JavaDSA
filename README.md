@@ -1,6 +1,6 @@
 # JavaDSA
 
-Studies about Java Data Structures and Algorithms in the Udemy course (https://www.udemy.com/course/data-structures-and-algorithms-java/):
+Studies about Java Data Structures and Algorithms in the [Udemy course](https://www.udemy.com/course/data-structures-and-algorithms-java/) :
 
 - [X] LinkedList
       <p><b> Methods </b>: printList, append, removeLast, prepend, removeFirst, get, set, insert, remove and reverse
