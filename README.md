@@ -19,6 +19,7 @@ Studies about Java Data Structures and Algorithms in the Udemy course (https://w
 - [ ] Quick Sort
 
 
+
 # Highlights in LinkedList
 I'm truly passionate about LinkedList. It's a way to create a data structure, with Node object. 
 Which Node object has it owns value and the reference to the next node, so it creates a chain. 
@@ -130,6 +131,15 @@ public Node get(int index) {
 	}
  }
 ```
-# Stack vs QUEUE
+# Stack vs Queue
 <p>Stack -> LIFO ---> Last in First Out</p>
 <p>Queue -> FIFO ---> First in First Out</p>
+
+# Key notes:
+
+<p> Among all the algoritms that I've encountered so far, which include Linked List, Doubly Linked List, Stack, Queue and Binary Tree: the methods for insertion are crucial to remember,  how to handle the cases when the structure is empty! This is the first step that have to be taken!  </p>
+<b><p>Linked List and Doubly Linked List</b> => check lenght, if it is zero, head and tail must be null, so just point them to the new node;</p>
+<b><p>Stack</b> => check height, if it is zero, top must be null, so just point it to the new node;</p>
+<b><p>Queue</b> => check lenght, if it is zero, first and last must be null, so just point them to the new node;</p>
+<b><p>Binary Tree </b>=> check root, must be null, so just point it to the new node;</p>
+
