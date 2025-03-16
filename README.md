@@ -137,9 +137,9 @@ public Node get(int index) {
 
 # Key notes:
 
-<p> Among all the algoritms that I've encountered so far, which include Linked List, Doubly Linked List, Stack, Queue and Binary Tree: the methods for insertion are crucial to remember,  how to handle the cases when the structure is empty! This is the first step that have to be taken!  </p>
+<p> Among all the algoritms that I've encountered so far, which include Linked List, Doubly Linked List, Stack, Queue and Binary Tree: the methods for insertion are crucial to remember,  how to handle the cases when the structure is empty! This is the first step that have to be taken! Obs.: method for insertion for Queue is called as enqueue and for the Stack is called as push! </p>
 <b><p>Linked List and Doubly Linked List</b> => check lenght, if it is zero, head and tail must be null, so just point them to the new node;</p>
-<b><p>Stack</b> => check height, if it is zero, top must be null, so just point it to the new node;</p>
-<b><p>Queue</b> => check lenght, if it is zero, first and last must be null, so just point them to the new node;</p>
+<b><p>Stack</b> => check height, if it is zero, top must be null, so just point it to the new node;</p> 
+<b><p>Queue</b> => check lenght, if it is zero, first and last must be null, so just point them to the new node;</p> 
 <b><p>Binary Tree </b>=> check root, must be null, so just point it to the new node;</p>
 
