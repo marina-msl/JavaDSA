@@ -21,7 +21,6 @@ public class HashTable {
 		dataMap = new Node[size];
 	}
 	
-	
 	public void printTable() {
 		for (int i = 0; i < dataMap.length; i ++) {
 			System.out.println(i + ":");
@@ -32,4 +31,15 @@ public class HashTable {
 			}
 		}
 	}
+	
+	private int hash(String key) {
+		int hash = 0;
+		char [] keyChars = key.toCharArray();
+		for (int i = 0; i < keyChars.length; i++ ) {
+			int asciiValue = keyChars[i];
+			hash = (hash + asciiValue * 23 ) % dataMap.length; 
+		}
+		return hash;
+	}
+	
 }
