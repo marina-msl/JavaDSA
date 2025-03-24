@@ -43,8 +43,11 @@ public class BST {
 		}
 	}
 	
+	
 	public boolean contains(int value) {
-		if (root == null) return false;
+		//It is not necessary if root is null, because if root is null, the temp in while it will be null
+		// and it will return false in line 63
+//		if (root == null) return false;
 
 		Node temp = root;
 		

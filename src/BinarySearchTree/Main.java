@@ -20,7 +20,16 @@ public class Main {
 		System.out.println("Contains? " + myBst.contains(27));
 		System.out.println("Contains? " + myBst.contains(97));
 		System.out.println("Contains? " + myBst.contains(52));
-
+		
+		
+		
+		BST mySecondBst = new BST();
+		
+		long before = System.currentTimeMillis();
+		System.out.println("Contains? " + mySecondBst.contains(27));
+		long after = System.currentTimeMillis();
+		
+		System.out.println("How long does it time in Milli " + (after - before));
 
 	}
 }
