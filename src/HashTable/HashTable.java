@@ -50,6 +50,13 @@ public class HashTable {
 			dataMap[index] = newNode;
 		} else {
 			Node temp = dataMap[index];
+			
+			//checking if the node's key is the same, if it is, this is for updating the value 
+			if (temp.key.equals(key)) {
+				temp.value += value;
+				return;
+			}
+			
 			while (temp.next != null) {
 				temp = temp.next;
 			}
@@ -57,4 +64,19 @@ public class HashTable {
 		}
 	}
 	
+	public int get(String key) {
+		int index = hash(key);
+		
+		Node temp = dataMap[index];
+
+		while (temp.next != null) {
+			if (temp.key.equals(key)) {
+				return temp.value;
+			} else {
+				temp = temp.next;
+			}
+		}
+		
+	return 0;	
+	}
 }

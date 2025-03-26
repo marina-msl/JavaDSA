@@ -19,5 +19,8 @@ public class Main {
 		
 		System.out.println("Printing HashTable");
 		myHashTable.printTable();
+		
+		System.out.println("Nails = " + myHashTable.get("nails"));
+		
 	}
 }
