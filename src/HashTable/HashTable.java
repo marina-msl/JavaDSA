@@ -1,5 +1,8 @@
 package HashTable;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class HashTable {
 	
 	private int size = 7;
@@ -78,5 +81,20 @@ public class HashTable {
 		}
 		
 	return 0;	
+	}
+	
+	public ArrayList<String> keys() {
+//		Node temp = dataMap[0];
+		ArrayList<String> keys = new ArrayList<>();
+		
+		for (int i = 0 ; i < dataMap.length; i++) {
+			Node temp = dataMap[i];
+			while(temp != null) {
+				keys.add(temp.key);
+				
+				temp = temp.next;
+			}
+		}
+		return keys;
 	}
 }

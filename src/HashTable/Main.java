@@ -22,5 +22,9 @@ public class Main {
 		
 		System.out.println("Nails = " + myHashTable.get("nails"));
 		
+		myHashTable.keys();
+		
+		System.out.println(myHashTable.keys().toString());
+		
 	}
 }
