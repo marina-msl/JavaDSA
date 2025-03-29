@@ -7,8 +7,12 @@ Studies about Java Data Structures and Algorithms in the [Udemy course](https://
 - [X] Doubly LinkedList
          <p><b> Methods </b>: printList, append, removeLast, prepend, removeFirst, get, set, insert, remove
 
-- [ ] Stacks and Queues
-- [ ] Trees
+- [X] Stacks 
+	<p><b> Methods </b>: push, pop
+- [X] Queues
+      	<p><b> Methods </b>: enqueue, dequeue
+- [X] Trees
+	<p><b> Methods </b>: insert, contains
 - [ ] Hash Tables
 - [ ] Graphs
 - [ ] Heaps
@@ -142,4 +146,36 @@ public Node get(int index) {
 <b><p>Stack</b> => check height, if it is zero, top must be null, so just point it to the new node;</p> 
 <b><p>Queue</b> => check lenght, if it is zero, first and last must be null, so just point them to the new node;</p> 
 <b><p>Binary Tree </b>=> check root, must be null, so just point it to the new node;</p>
+
+# Highlights in Trees
+## Terminology:
+
+![image](https://github.com/user-attachments/assets/3a1b2285-3e6c-4cf1-9fae-5bac53361292)
+
+![image](https://github.com/user-attachments/assets/bbc03dd0-30e4-4f26-a8b6-338177f73454)
+
+![image](https://github.com/user-attachments/assets/05695777-f528-4715-9ed5-da31353843c6)
+
+![image](https://github.com/user-attachments/assets/8271cb6d-bfa9-4e87-8fbc-01084ec9b777)
+
+![image](https://github.com/user-attachments/assets/7c481a19-b120-4bba-98e4-1c529051758c)
+
+<p> Although the images here always illustrate a binay tree, tree can also have more than two children. This is not a strict rule!</p>
+
+<p> <b>The rule</b> is Trees can not have more than one parent! <b>Spoiler Alert! </b> When a 'Tree' has more than one parent, it's a <b>Graph</b>, not a <b>Tree!</b></p>
+
+## Leaf vs Node
+
+<p><b>Node</b>: It's a basic unit of the tree, that contains data and may have reference to others node (children).</p>
+
+<p><b>Leaf</b>: It's a basic unit of the tree, that contains data but doens't have reference to others node(children). It's essentialy the endpoint of a path in the tree. </p>
+
+
+
+
+
+
+
+
+
 
