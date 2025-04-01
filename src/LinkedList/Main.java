@@ -14,6 +14,5 @@ public class Main {
 		//		Output: 3 -> 2 -> 1 -> 8 -> 5 -> 10
 		myLinkedList.partitionList(5);
 		myLinkedList.printList();
-		
 	}
 }
