@@ -248,4 +248,41 @@ public class LinkedList {
 		
 		return slow;	
 	}
+	
+	/** challenge: Given a value x you need to rearrange the 
+	 * linked list such that all nodes with a value less than x 
+	 * come before all nodes with a value greater than or equal to x.
+		Additionally, the relative order of nodes in both partitions should remain unchanged.
+		
+		Input: 3 -> 8 -> 5 -> 10 -> 2 -> 1 x: 5
+		Output: 3 -> 2 -> 1 -> 8 -> 5 -> 10
+	 */
+
+
+	public void partitionList(int x) {
+		
+		if (head == null) return;
+		
+		Node dummy1 = new Node(0);
+		Node dummy2 = new Node(0);
+		Node lower = dummy1;
+		Node higher = dummy2;
+		Node current = head;
+		
+		while (current != null ) {
+			if (current.value < x) {
+				lower.next = current;
+				lower = current;
+			} else {
+				higher.next = current;
+				higher = current;
+			}
+			
+			current = current.next;
+		}
+		
+		higher.next = null;
+		lower.next = dummy2.next;
+		head = dummy1.next;
+	}
 }

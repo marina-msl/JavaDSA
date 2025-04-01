@@ -3,15 +3,17 @@ package LinkedList;
 public class Main {
 	
 	public static void main(String[] args) {
-		LinkedList myLinkedList = new LinkedList(1);
-		myLinkedList.append(2);
-		myLinkedList.append(3);
-		myLinkedList.append(4);
+		LinkedList myLinkedList = new LinkedList(3);
+		myLinkedList.append(8);
 		myLinkedList.append(5);
+		myLinkedList.append(10);
+		myLinkedList.append(2);
+		myLinkedList.append(1);
 	
-		//findKthFromEnd return the k-th node from the end of the list
-		System.out.println(myLinkedList.findKthFromEnd(3).value);
 		
+		//		Output: 3 -> 2 -> 1 -> 8 -> 5 -> 10
+		myLinkedList.partitionList(5);
+		myLinkedList.printList();
 		
 	}
 }
