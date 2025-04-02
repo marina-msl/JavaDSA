@@ -13,19 +13,12 @@ public class Main {
 		ddl.append(16);
 		ddl.append(18);
 		ddl.append(20);
-
-		System.out.println("Printing LinkedList");
-		ddl.printList();
-		
-		ddl.remove(9);
-		
-		System.out.println("Printing LinkedList");
-		ddl.printList();
-		
-		ddl.remove(0);
 		
 		System.out.println("Printing LinkedList");
 		ddl.printList();
 
+		ddl.swapFirstLast();
+		System.out.println("Printing LinkedList");
+		ddl.printList();
 	}
 }

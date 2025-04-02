@@ -188,4 +188,36 @@ public class DoublyLinkedList {
 		return temp;
 		
 	}
+	
+	
+	/** Challenge interview:Swap First and Last Node Values in a Doubly Linked List.
+	 *  Given a DoublyLinkedList, lets swap the values frist and last nodes in the list.
+	 *  Input: 1 <-> 2 <-> 3 <-> 4 <-> 5
+	 *	Output: 5 <-> 2 <-> 3 <-> 4 <-> 1
+	 */
+	
+	public void swapFirstLast() {
+		
+		if (length < 2) return;
+		
+		Node tempHead = head;
+		
+		head.next.prev = tail;
+		tail.prev.next = head;
+		
+		head.prev = tail.prev;
+		tail.next = head.next;
+		head.next = null;
+		tail.prev = null;
+		
+		head = tail;
+		tail = tempHead;
+		
+		
+//	   int temp = head.value;
+//		
+//		head.value = tail.value;
+//		tail.value = temp;
+		
+	}
 }
