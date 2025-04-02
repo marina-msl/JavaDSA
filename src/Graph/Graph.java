@@ -12,9 +12,9 @@ public class Graph {
 		System.out.println(adjList);
 	}
 	
-	public boolean addVertex(String vertext) {
-		if (adjList.get(vertext) == null) {
-			adjList.put(vertext, new ArrayList<String>());
+	public boolean addVertex(String vertex) {
+		if (adjList.get(vertex) == null) {
+			adjList.put(vertex, new ArrayList<String>());
 			
 			return true;
 		}
@@ -40,6 +40,18 @@ public class Graph {
 			return true;
 		}
 		return false;
+	}
+	
+	public boolean removeVertex(String vertex) {
+		
+		
+		if (adjList.get(vertex) == null) return false;
+		
+		for (String vertexFound : adjList.get(vertex)) {
+				adjList.get(vertexFound).remove(vertex);
+		}
+		adjList.remove(vertex);
+		return true;
 	}
 	
 }
