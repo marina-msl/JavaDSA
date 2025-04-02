@@ -13,8 +13,10 @@ Studies about Java Data Structures and Algorithms in the [Udemy course](https://
       	<p><b> Methods </b>: enqueue, dequeue
 - [X] Trees
 	<p><b> Methods </b>: insert, contains
-- [ ] Hash Tables
-- [ ] Graphs
+- [X] Hash Tables
+	<p><b> Methods </b>: hashMethod, set, get, keys (return an array of all the keys)
+- [X] Graphs
+      <p><b> Methods </b>: addVertex, addEdge, removeEdge, removeVertex 
 - [ ] Heaps
 - [ ] Recursion
 - [ ] Tree Traversal
@@ -135,6 +137,47 @@ public Node get(int index) {
 	}
  }
 ```
+### Challenge in DoublyLinkedList:
+
+<p>Swap First and Last Node Values in a Doubly Linked List. Given a DoublyLinkedList, lets swap the values frist and last nodes in the list.</p>
+<p>Input: 1 <-> 2 <-> 3 <-> 4 <-> 5</p>
+<p>Output: 5 <-> 2 <-> 3 <-> 4 <-> 1</p>
+
+<p><b>The code I did:</b></p>
+
+```java
+public void swapFirstLast() {
+		
+	if (length < 2) return;
+		
+	Node tempHead = head;		
+	head.next.prev = tail;
+	tail.prev.next = head;
+
+	head.prev = tail.prev;
+	tail.next = head.next;
+	head.next = null;
+	tail.prev = null;
+		
+	head = tail;
+	tail = tempHead;
+}
+```
+
+<p><b>The result (much easier!!!) :</b></p>
+
+```java
+public void swapFirstLast() {
+		
+	if (length < 2) return;
+		
+	int temp = head.value;
+	head.value = tail.value;
+	tail.value = temp;
+		
+}
+```
+
 # Stack vs Queue
 <p>Stack -> LIFO ---> Last in First Out</p>
 <p>Queue -> FIFO ---> First in First Out</p>
