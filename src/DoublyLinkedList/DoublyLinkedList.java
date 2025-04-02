@@ -199,25 +199,25 @@ public class DoublyLinkedList {
 	public void swapFirstLast() {
 		
 		if (length < 2) return;
-		
-		Node tempHead = head;
-		
-		head.next.prev = tail;
-		tail.prev.next = head;
-		
-		head.prev = tail.prev;
-		tail.next = head.next;
-		head.next = null;
-		tail.prev = null;
-		
-		head = tail;
-		tail = tempHead;
-		
-		
-//	   int temp = head.value;
 //		
-//		head.value = tail.value;
-//		tail.value = temp;
+//		Node tempHead = head;
+//		
+//		head.next.prev = tail;
+//		tail.prev.next = head;
+//		
+//		head.prev = tail.prev;
+//		tail.next = head.next;
+//		head.next = null;
+//		tail.prev = null;
+//		
+//		head = tail;
+//		tail = tempHead;
+//		
+		
+	   int temp = head.value;
+		
+		head.value = tail.value;
+		tail.value = temp;
 		
 	}
 }
