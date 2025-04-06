@@ -67,7 +67,11 @@ public class BST {
 		}
 	}
 	
+
 	public int minimumValue(Node currentNode) {
+		
+		//Once binaries search tree always insert the smallest values on the left
+		//so the search here, is while the current.left is null
 		while (currentNode.left != null) {
 			currentNode = currentNode.left;
 		}
