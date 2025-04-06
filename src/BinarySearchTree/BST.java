@@ -15,16 +15,21 @@ public class BST {
 	}
 	
 	
-	//Implementing insert recursevily
+	//Implementing insert recursively
 	private Node rInsert(Node currentNode, int value) {
-		
+		//this is the base case, if the currentNode is null, it means we reached where 
+		//the new Node has to be inserted
 		if (currentNode == null) return new Node(value);
 		
+		//due the nature of BST, if the value is less then the Node, you have to go left, if the value is greater
+		//than the currentNode, you have to go to the right side.
+		//here nothing to return, only to go traversal to the BST to find the correct place to inserted the new Node.
 		if (value < currentNode.value) {
 			currentNode.left = rInsert(currentNode.left, value);
 		} else if (value > currentNode.value ) {
 			currentNode.right = rInsert(currentNode.right, value);
 		}
+		//this line is crucial for maintaining the tree structure during recursive calls
 		 return currentNode;
 	}
 	
