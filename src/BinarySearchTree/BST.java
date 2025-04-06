@@ -64,7 +64,7 @@ public class BST {
 	}
 	
 	//Implementing contains recursively
-	public boolean rContains(Node currentNode, int value) {
+	private boolean rContains(Node currentNode, int value) {
 		
 		if (currentNode == null) return false;
 		
