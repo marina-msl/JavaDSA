@@ -62,14 +62,6 @@ public class BST {
 		}
 	}
 	
-//	private Node deleteNode() {
-//		
-//	}
-//	
-//	public void delete(int value) {
-//		deleteNode(root, value);
-//	}
-	
 	public int minimumValue(Node currentNode) {
 		while (currentNode.left != null) {
 			currentNode = currentNode.left;
@@ -100,13 +92,17 @@ public class BST {
 	
 	//Implementing contains recursively
 	private boolean rContains(Node currentNode, int value) {
-		
+		//if currentNode is null, it means the traversal has reached the end of the tree
+		//without finding the value, so the method returns true 
 		if (currentNode == null) return false;
 		
+		//if the currentNode's value is the same of value, the value contains in the BST
 		if (currentNode.value == value) return true;
 		
+		//if the value is less then currenteNode.value, the method calls itself recursively on the left child
 		if (value < currentNode.value) {
 			return rContains(currentNode.left, value);
+		//if the value if greater the currentNode.value, the method calls itself recursively on the right child	
 		} else {
 			return rContains(currentNode.right, value);
 		}
