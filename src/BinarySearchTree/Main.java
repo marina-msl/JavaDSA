@@ -16,6 +16,20 @@ public class Main {
 		
 		System.out.println("Contains value 27? " + myBst.rContains(27));
 		System.out.println("Contains value 17? " + myBst.rContains(17));
+		
+		BST mySecondBst = new BST();
+		
+		mySecondBst.rInsert(50);
+		mySecondBst.rInsert(76);
+		mySecondBst.rInsert(23);
+		mySecondBst.rInsert(89);
+		mySecondBst.rInsert(24);
+		
+		
+		
+		System.out.println("\nRoot: " + mySecondBst.root.value);
+		System.out.println("\nRoot->left: " + mySecondBst.root.left.value);
+		System.out.println("\nRoot->right: " + mySecondBst.root.right.value);
 
 	}
 }
