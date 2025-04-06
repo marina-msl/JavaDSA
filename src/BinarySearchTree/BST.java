@@ -62,6 +62,22 @@ public class BST {
 		}
 	}
 	
+//	private Node deleteNode() {
+//		
+//	}
+//	
+//	public void delete(int value) {
+//		deleteNode(root, value);
+//	}
+	
+	public int minimumValue(Node currentNode) {
+		while (currentNode.left != null) {
+			currentNode = currentNode.left;
+		}
+		
+		return currentNode.value;
+	}
+	
 	
 	public boolean contains(int value) {
 		//It is not necessary if root is null, because if root is null, the temp in while it will be null

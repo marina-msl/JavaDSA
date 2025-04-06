@@ -30,6 +30,9 @@ public class Main {
 		System.out.println("\nRoot: " + mySecondBst.root.value);
 		System.out.println("\nRoot->left: " + mySecondBst.root.left.value);
 		System.out.println("\nRoot->right: " + mySecondBst.root.right.value);
+		
+		
+		System.out.println(mySecondBst.minimumValue(myBst.root.right));
 
 	}
 }
