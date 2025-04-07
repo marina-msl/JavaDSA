@@ -32,7 +32,7 @@ public class StackWithArray<T> {
 		return stackList.size();
 	}
 	
-	/** Challenge was implementing a push method for a stack, it was made 
+	/** The challenge was to implement a push method for the stack, it was made 
 	 *  with an Array using generics instead of a LinkedList.
 	 *  Really simple, only add the value in the Array.
 	 * @param value
@@ -40,5 +40,15 @@ public class StackWithArray<T> {
 	public void push(T value) {
 		stackList.add(value);
 	}
-
+	
+	/** The challenge was to implement a pop method for the stack,
+	 * 	so important to check if the size is zero, and return null.
+	 *  and then, return the end value of the stack.
+	 * @return
+	 */
+	public T pop() {
+		if(stackList.size() == 0) return null;
+		
+		return stackList.remove(stackList.size() - 1);
+	}
 }
