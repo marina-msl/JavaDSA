@@ -19,11 +19,9 @@ public class Main {
 		
 		BST mySecondBst = new BST();
 		
-		mySecondBst.rInsert(50);
-		mySecondBst.rInsert(76);
-		mySecondBst.rInsert(23);
-		mySecondBst.rInsert(89);
-		mySecondBst.rInsert(24);
+		mySecondBst.rInsert(2);
+		mySecondBst.rInsert(1);
+		mySecondBst.rInsert(3);
 		
 		
 		
@@ -31,8 +29,12 @@ public class Main {
 		System.out.println("\nRoot->left: " + mySecondBst.root.left.value);
 		System.out.println("\nRoot->right: " + mySecondBst.root.right.value);
 		
+		mySecondBst.deleteNode(2);
 		
-		System.out.println(mySecondBst.minimumValue(myBst.root.right));
+		System.out.println("\nRoot: " + mySecondBst.root.value);
+		System.out.println("\nRoot->left: " + mySecondBst.root.left.value);
+		System.out.println("\nRoot->right: " + mySecondBst.root.right);
+		
 
 	}
 }
