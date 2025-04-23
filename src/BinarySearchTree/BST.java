@@ -1,5 +1,9 @@
 package BinarySearchTree;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class BST {
 	
 	Node root;
@@ -147,5 +151,28 @@ public class BST {
 	
 	public boolean rContains(int value) {
 		return rContains(root, value);
+	}
+	
+	
+	//Breadth First Search method -> to traversal the binary tree!
+	public ArrayList<Integer> BFS() {
+		Node currentNode = root;
+		Queue<Node> queue = new LinkedList<>();
+		ArrayList<Integer> result = new ArrayList<Integer>();
+		queue.add(currentNode);
+		
+		while (queue.size() > 0 ) {
+			currentNode = queue.remove();
+			result.add(currentNode.value);
+			
+			if (currentNode.left != null) {
+				queue.add(currentNode.left);
+			}
+			
+			if (currentNode.right != null) {
+				queue.add(currentNode.right);
+			}
+		}	
+		return result;
 	}
 }
