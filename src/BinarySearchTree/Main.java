@@ -14,7 +14,7 @@ public class Main {
 		myBst.insert(52);
 		myBst.insert(82);
 		
-		System.out.println(myBst.BFS());
+		System.out.println(myBst.DFSPreOrder());
 		
 
 	}

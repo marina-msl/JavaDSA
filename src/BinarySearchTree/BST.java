@@ -175,4 +175,26 @@ public class BST {
 		}	
 		return result;
 	}
+	
+	
+	//Depth First Search - Pre-order
+	public ArrayList<Integer> DFSPreOrder() {
+		ArrayList<Integer> result = new ArrayList<Integer>();
+		
+		class Traverse {
+			Traverse(Node currentNode) {
+				result.add(currentNode.value);
+				
+				if (currentNode.left != null) {
+					new Traverse(currentNode.left);
+				}
+				
+				if (currentNode.right != null) {
+					new Traverse(currentNode.right);
+				}
+			}
+		}
+		new Traverse(root);
+		return result;
+	}
 }
