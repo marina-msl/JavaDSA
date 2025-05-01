@@ -19,8 +19,7 @@ public class Main {
 		return n.multiply(fatorial(n.subtract(BigInteger.ONE)));
 	}
 	
-	//calculating factorial with 
-	
+	//calculating factorial with control structure
 	public static int factorialWithLoop(int n) {
 		
 		int factorial = 1;
