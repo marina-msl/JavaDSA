@@ -1,24 +1,25 @@
 # JavaDSA
 
-Studies about Java Data Structures and Algorithms in the [Udemy course](https://www.udemy.com/course/data-structures-and-algorithms-java/) :
+Studies on Java Data Structures and Algorithms through the [Udemy course](https://www.udemy.com/course/data-structures-and-algorithms-java/) and the book [Estrutura de dados e Algoritmos em Java](https://www.amazon.com.br/Estruturas-Dados-Algoritmos-em-Java/dp/972722704X) by a Brazilian author:
 
 - [X] LinkedList
-      <p><b> Methods </b>: printList, append, removeLast, prepend, removeFirst, get, set, insert, remove and reverse
+      <p><b> Methods</b>: printList, append, removeLast, prepend, removeFirst, get, set, insert, remove and reverse
 - [X] Doubly LinkedList
-         <p><b> Methods </b>: printList, append, removeLast, prepend, removeFirst, get, set, insert, remove
+         <p><b> Methods</b>: printList, append, removeLast, prepend, removeFirst, get, set, insert, remove
 
 - [X] Stacks 
-	<p><b> Methods </b>: push, pop
+	<p><b> Methods</b>: push, pop
 - [X] Queues
-      	<p><b> Methods </b>: enqueue, dequeue
+      	<p><b> Methods</b>: enqueue, dequeue
 - [X] Trees
-	<p><b> Methods </b>: insert, contains
+	<p><b> Methods</b>: insert, contains
 - [X] Hash Tables
-	<p><b> Methods </b>: hashMethod, set, get, keys (return an array of all the keys)
+	<p><b> Methods</b>: hashMethod, set, get, keys (return an array of all the keys)
 - [X] Graphs
-      <p><b> Methods </b>: addVertex, addEdge, removeEdge, removeVertex 
+      <p><b> Methods</b>: addVertex, addEdge, removeEdge, removeVertex 
 - [ ] Heaps
-- [ ] Recursion
+- [x] Recursion
+  	<p><b> Methods</b>: factorial with recursion or looping control structures
 - [ ] Tree Traversal
 - [ ] Basic Sorts
 - [ ] Merge Sort
