@@ -14,7 +14,7 @@ public class Main {
 		myBst.insert(52);
 		myBst.insert(82);
 		
-		System.out.println(myBst.DFSPostOrder());
+		System.out.println(myBst.DFSInOrder());
 		
 
 	}

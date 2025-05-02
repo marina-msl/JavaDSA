@@ -218,4 +218,27 @@ public class BST {
 		new Traverse(root);
 		return result;
 	}
+	
+	
+	//Depth First Search - In Order
+		public ArrayList<Integer> DFSInOrder() {
+			ArrayList<Integer> result = new ArrayList<Integer>();
+			
+			class Traverse {
+				Traverse(Node currentNode) {
+					
+					if (currentNode.left != null) {
+						new Traverse(currentNode.left);
+					}
+
+					result.add(currentNode.value);
+					
+					if (currentNode.right != null) {
+						new Traverse(currentNode.right);
+					}
+				}
+			}
+			new Traverse(root);
+			return result;
+		}
 }
