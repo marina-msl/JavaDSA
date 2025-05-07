@@ -11,6 +11,19 @@ public class MergeSort {
 		
 		System.out.println(Arrays.toString(merge(array1, array2)));
 	}
+
+	public static int[] mergeSort(int[] array) {
+		if (array.length == 1) return array;
+		
+		int midIndex = array.length / 2;
+		
+		int[] left = mergeSort(Arrays.copyOfRange(array, 0, midIndex));
+		int[] right = mergeSort(Arrays.copyOfRange(array, midIndex, array.length));
+		
+		
+		merge(left, right);
+	}
+	
 	
 	public static int[] merge(int[] array1, int[] array2) {
 		int[] combined = new int[array1.length + array2.length];
