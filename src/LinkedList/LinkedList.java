@@ -285,4 +285,23 @@ public class LinkedList {
 		lower.next = dummy2.next;
 		head = dummy1.next;
 	}
+	
+	//remove duplicates 
+	public void removeDuplicates() {
+		
+		Node current = head;
+
+		while (current != null) {
+			Node runner = current;
+		
+			while (runner.next != null) {
+				if (runner.next.value == current.value) {
+					runner.next = runner.next.next;
+				} else {
+					runner = runner.next;
+				}
+			}
+			current = current.next;
+		}
+	}
 }
