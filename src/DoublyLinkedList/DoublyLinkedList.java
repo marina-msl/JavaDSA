@@ -220,4 +220,24 @@ public class DoublyLinkedList {
 		tail.value = temp;
 		
 	}
+	
+	/*
+	 * Palindrome checker
+	 */
+	
+	public boolean isPalindrome() {
+		
+		if (length < 1 || length == 1) return true;
+		
+		Node foward = head;
+		Node backard = tail;
+		
+		for (int i = 0; i < length/2; i++) {
+			if (foward.value != backard.value) return false;
+			foward = foward.next;
+			backard = backard.prev;
+		}
+		
+		return true;
+	}
 }
