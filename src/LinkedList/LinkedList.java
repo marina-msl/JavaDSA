@@ -304,4 +304,27 @@ public class LinkedList {
 			current = current.next;
 		}
 	}
+	
+	/*
+	 * In binary-to-decimal conversion, each position of a binary number corresponds to a specific power of 2, starting from the rightmost digit.
+	The rightmost digit is multiplied by 2^0 (which equals 1).
+	The next digit to the left is multiplied by 2^1 (which equals 2).
+	The digit after that is multiplied by 2^2 (which equals 4). ... and so on.
+	To find the decimal representation:
+	Multiply each binary digit by its corresponding power of 2 value.
+	Sum up all these products.
+	 */
+	public int binaryToDecimal() {
+
+		Node current = head;
+		int counter = 0;
+		
+		while (current != null) {
+			counter = counter * 2 + current.value;
+			current = current.next;
+		}
+
+		return counter;
+	}
+	
 }
